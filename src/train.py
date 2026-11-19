@@ -1,12 +1,19 @@
+
 import tensorflow as tf
+
 from tensorflow import keras
 from tensorflow.keras import layers
+
 import os
 
 DATASET_DIR = "data/garbage"
+
 IMG_SIZE = (224, 224)
+
 BATCH_SIZE = 32
+
 EPOCHS = 15
+
 SEED = 42
 
 train_ds = tf.keras.utils.image_dataset_from_directory(
